@@ -28,7 +28,7 @@ in
 
   config = mkMerge [
     (mkIf cfg.enable {
-      system.activationScripts.extraActivation.text = ''
+      system.activationScripts.postActivation.text = ''
         echo -e "applying custom icons..."
 
         ${
